@@ -1,0 +1,10 @@
+{
+  "name": "LivePure",
+  "version": "1.0.0",
+  "description": "Addiction Recovery",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthony Elliott <anthonye2007@gmail.com>"
+}
