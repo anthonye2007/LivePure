@@ -8,5 +8,10 @@
   "launch_in_dev": [
     "PhantomJS",
     "Chrome"
-  ]
+  ],
+  "proxies": {
+    "/api/v1": {
+      "target": "http://localhost:1337"
+    }
+  }
 }
