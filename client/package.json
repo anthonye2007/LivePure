@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "ember build",
-    "start": "ember server",
+    "start": "ember serve --proxy http://localhost:1337",
     "test": "ember test"
   },
   "repository": "",
