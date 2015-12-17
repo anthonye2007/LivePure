@@ -28,3 +28,12 @@ test('a form field for score should exist', function(assert) {
     assert.ok(scoreTags.length >= 1);
   });
 });
+
+test('score should have an input box', function(assert) {
+  visit('/form');
+
+  andThen(function() {
+    var inputs = find('input');
+    assert.ok(inputs.length >= 1);
+  });
+});
