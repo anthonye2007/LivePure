@@ -26,7 +26,6 @@ test('/questions should have more than one question', function(assert) {
   andThen(function() {
     var questionTags = find('.question');
     var numberOfQuestions = questionTags.length;
-    console.log('questions: ' + numberOfQuestions);
     assert.ok(numberOfQuestions > 1);
   });
 });
