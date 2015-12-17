@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return Ember.$.getJSON('/api/v1/form-fields');
+    return Ember.$.getJSON('/api/v1/form-field');
   }
 });

@@ -19,3 +19,12 @@ test('visiting /form', function(assert) {
     assert.equal(currentURL(), '/form');
   });
 });
+
+test('a form field for score should exist', function(assert) {
+  visit('/form');
+
+  andThen(function() {
+    var scoreTags = find('.score');
+    assert.ok(scoreTags.length >= 1);
+  });
+});
