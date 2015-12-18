@@ -37,3 +37,12 @@ test('score should have an input box', function(assert) {
     assert.ok(inputs.length >= 1);
   });
 });
+
+test('Reading notes should have a text area', function(assert) {
+  visit('/form');
+
+  andThen(function() {
+    var readingNotes = find('#readingNotes');
+    assert.ok(readingNotes.length === 1);
+  });
+});
