@@ -46,3 +46,12 @@ test('Reading notes should have a text area', function(assert) {
     assert.ok(readingNotes.length === 1);
   });
 });
+
+test('There should be one submit button', function(assert) {
+  visit('/form');
+
+  andThen(function() {
+    var submitButtons = find('button.submit');
+    assert.ok(submitButtons.length === 1);
+  });
+});
