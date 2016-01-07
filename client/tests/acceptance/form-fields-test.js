@@ -55,3 +55,12 @@ test('There should be one submit button', function(assert) {
     assert.ok(submitButtons.length === 1);
   });
 });
+
+test('Visiting /form/sendEmail should say it sent an email', function(assert) {
+  visit('/form/sendEmail');
+
+  andThen(function() {
+    var emailSent = find('.emailSent');
+    assert.ok(emailSent.length > 0);
+  });
+});
